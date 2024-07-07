@@ -11,6 +11,7 @@ softdepend:
   - Geyser-Spigot
   - PlaceholderAPI
 author: CraftSupport
+folia-supported: true
 commands:
   acreload:
     description: Reloads the plugin
