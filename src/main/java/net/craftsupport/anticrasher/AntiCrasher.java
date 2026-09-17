@@ -2,7 +2,7 @@ package net.craftsupport.anticrasher;
 
 import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.event.PacketListenerPriority;
-import io.github.retrooper.packetevents.bstats.Metrics;
+import org.bstats.bukkit.Metrics;
 import net.craftsupport.anticrasher.commands.reloadCommand;
 import net.craftsupport.anticrasher.packet.TabCompleteListener;
 import net.craftsupport.anticrasher.packet.WindowListener;

@@ -60,7 +60,7 @@ public class WindowListener implements PacketListener {
         }
         if (utilsInstance.punishonattempt) {
             String replacedString = utilsInstance.punishcommand.replace("%player%", event.getUser().getName());
-            Bukkit.getScheduler().runTask(plugin, () -> {
+            Bukkit.getGlobalRegionScheduler().execute(plugin, () -> {
                 if (plugin.isPAPIEnabled()) {
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), PlaceholderAPI.setPlaceholders(Bukkit.getOfflinePlayer(event.getUser().getUUID()), replacedString));
                 } else {
